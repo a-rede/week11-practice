@@ -72,13 +72,27 @@ function listStyleChange() {
 
 listStyleChange();
 
+// Example 6: Image updating (adding a src, width, height, and alt)
 function updateImage() {
     const imageElement = document.querySelector("#shoppingCart");
     imageElement.src = "https://cdn-icons-png.flaticon.com/512/263/263142.png";
     imageElement.width = 100;
     imageElement.height = 100;
+    imageElement.alt = "Shopping cart icon";
 };
 
 updateImage();
 
 
+// Example 7: Updating styles
+
+function findGreen() {
+    const listItem = document.querySelectorAll(".shopping li");
+    for (let i = 0; i < listItem.length; i++) {
+        if (listItem[i].textContent.includes("green")) {
+            listItem[i].classList.add("greenText");
+        }
+    };
+};
+
+findGreen();
